@@ -1,0 +1,39 @@
+﻿<Window x:Class="TheNextCar.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TheNextCar"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="0,0,2,0" Background="Black">
+        <Button x:Name="StartButton" Content="STOPPED" Click="OnStartButtonClicked" 
+                Width="90" Height="50" HorizontalAlignment="Left" 
+                VerticalAlignment="Bottom" Margin="70,50,50,50" Foreground="White" Background="Red" FontWeight="Bold" FontSize="18"/>
+        <Label Content="Power" Foreground="White" Width="50" Height="50"
+               HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="75,75,75,75"/>
+        <Label Content="Security" Foreground="White" Width="50" Height="50"
+               HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="75,75,225,75"/>
+        <Button x:Name="AccuButton" Content="OFF" Click="OnAccuButtonClicked" Width="100" Height="50"
+                HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="50,50,50,50"/>
+        <Button x:Name="LockDoorButton" Content="LOCK" Click="OnLockDoorButtonClicked" Width="100" Height="50"
+                HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="50,50,200,50"/>
+        <Label x:Name="AccuState" Content="no power" FontSize="10" Foreground="#FF8B8B8B" Width="100" Height="50"
+               VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,0,20,0"/>
+        <Label x:Name="LockDoorState" Content="Door is unlocked" FontSize="10" Foreground="#FF8F8F8F" Width="100" Height="50"
+               VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,0,200,0"/>
+        <Image Source="assets/navigation.jpg" Height="300" VerticalAlignment="Top"/>
+        <Label Content="126" FontSize="48" FontWeight="Bold" Width="50" Height="50"/>
+        <Label Content="km/h" Width="50" Height="50"/>
+        <Label Content="45" FontSize="48" FontWeight="Bold" Width="50" Height="50"/>
+        <Label Content="x 1000 rpm" Width="50" Height="50"/>
+        <Label Content="no power available" Name="status" Foreground="White" FontSize="10" Width="100" Height="50"
+               VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="70,0,0,0"/>
+        <Label Content="Door" Foreground="White" Width="50" Height="50"
+               VerticalAlignment="Bottom" Margin="50,50,50,75"/>
+        <Button x:Name="DoorOpenButton" Content="CLOSE" Background="White" Click="OnDoorOpenButtonClicked"
+                Width="100" Height="50" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="50,50,350,50"/>
+        <Label x:Name="DoorOpenState" Content="Door is opened" FontSize="10" Foreground="#FF8F8F8F" 
+               Width="100" Height="50" VerticalAlignment="Bottom" Margin="0,0,0,0"/>
+    </Grid>
+</Window>
